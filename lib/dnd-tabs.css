@@ -1,0 +1,62 @@
+.tabContainer {
+    flex-grow: 1;
+    position: relative;
+}
+
+.tabHandle {
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    padding: 4px;
+    left: 0;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    opacity: 0;
+    transition: opacity .2s ease, color .2s ease;
+    -webkit-app-region: no-drag;
+}
+
+.tabContainer:hover .tabHandle {
+    opacity: 1;
+}
+
+.tabHandle:hover {
+    color: #fff;
+}
+
+.tabHandle::before {
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: opacity .2s ease;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.tabHandle:hover::before {
+    opacity: 1;
+}
+
+.dropZone {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 150%;
+    left: 0;
+}
+
+.dropZoneHover::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    bottom: calc(33.3333% + 5px);
+    right: 5px;
+    background: rgba(255, 255, 255, .125);
+    border-radius: 2px;
+}

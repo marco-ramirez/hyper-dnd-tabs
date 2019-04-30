@@ -1,0 +1,21 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "quotes": [2, "single", {"allowTemplateLiterals": true}],
+        "semi": [2, "always"],
+        "arrow-parens": [2, "as-needed"],
+        "no-trailing-spaces": 2,
+        "no-shadow": 2,
+        "comma-dangle": [2, "never"],
+        "react/prop-types": false
+    }
+}

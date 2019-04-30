@@ -1,0 +1,51 @@
+{
+  "name": "hyper-dnd-tabs",
+  "version": "0.0.0",
+  "description": "Drag and drop hyper tabs",
+  "main": "build/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -w --mode=development",
+    "build": "webpack --mode=production",
+    "release": "release-it"
+  },
+  "author": "Marco Ramirez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.20.0",
+    "release-it": "^13.6.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "electron": "1.8.8"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties"
+      ]
+    ]
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
