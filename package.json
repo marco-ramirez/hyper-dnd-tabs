@@ -56,5 +56,10 @@
   "bugs": {
     "url": "https://github.com/marco-ramirez/hyper-dnd-tabs/issues"
   },
-  "homepage": "https://github.com/marco-ramirez/hyper-dnd-tabs#readme"
+  "homepage": "https://github.com/marco-ramirez/hyper-dnd-tabs#readme",
+  "keywords": [
+    "hyper",
+    "drag-and-drop",
+    "tabs"
+  ]
 }
