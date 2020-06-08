@@ -1,6 +1,6 @@
 {
   "name": "hyper-dnd-tabs",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "description": "Drag and drop hyper tabs",
   "main": "build/bundle.js",
   "scripts": {
