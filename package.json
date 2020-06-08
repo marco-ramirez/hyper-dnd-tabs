@@ -46,6 +46,15 @@
     ]
   },
   "directories": {
+    "doc": "doc",
     "lib": "lib"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marco-ramirez/hyper-dnd-tabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marco-ramirez/hyper-dnd-tabs/issues"
+  },
+  "homepage": "https://github.com/marco-ramirez/hyper-dnd-tabs#readme"
 }
