@@ -15,6 +15,7 @@
     opacity: 0;
     transition: opacity .2s ease, color .2s ease;
     -webkit-app-region: no-drag;
+    cursor: grab;
 }
 
 .tabContainer:hover .tabHandle {
@@ -23,6 +24,10 @@
 
 .tabHandle:hover {
     color: #fff;
+}
+
+.tabHandle:active {
+    cursor: grabbing;
 }
 
 .tabHandle::before {
